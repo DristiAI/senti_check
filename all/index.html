@@ -62,7 +62,7 @@ async function init()
     console.log('Start loading model') 
     model = await tf.loadModel('model/model.json')
     document.getElementById('status').innerHTML = 'Model loaded'
-    document.getElementById('status') = "<a href="images/model.png" target="_blank"> See Model Architecture</a>
+    document.getElementById('status') = "<a href="images/model.png" target="_blank"> See Model Architecture</a>"
     console.log('Finish loading model') 
 }
 function classify()
