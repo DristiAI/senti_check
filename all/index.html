@@ -73,9 +73,9 @@ function classify()
     pred = model.predict([input,input,input])
     result = pred.dataSync()[0]
     if (result > 0.5)
-     document.getElementById('result').innerHTML = 'Positive'
+     document.getElementById('result').innerHTML = 'Positive Sentiment'
     else 
-     document.getElementById('result').innerHTML = 'Negative'
+     document.getElementById('result').innerHTML = 'Negative Sentiment'
  }
 var model ; 
 var word_index = undefined
@@ -84,9 +84,9 @@ window.onload = function (){
 }
 </script>
  <body>
-  <div>
+<!--   <div>
   <div style="float:right; margin-right:50px;"><a href="images/dristibutola.pdf"><img src="https://i.postimg.cc/qB8JqP2M/res.png" ></a></div>  
-  <div >
+  <div > -->
   <p id = "status"></p>
   <p>Enter a sentence , to get output sentiment </p> <br>
   <input id = 'txt' type="text" name="username"> <button onclick = "classify()" >Classify</button><br>
